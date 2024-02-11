@@ -56,10 +56,19 @@ function play(){
 }
 
 function reset(){
+    gameOver = false;
+    history = []
+    if(gameOver == false){
+        startBtn.disabled = false;
+    }
     //user input 초기화
+    count = 5;
     userInput.value= "";
     userResult.textContent = '두근두근!';
+    conutText.textContent = `남은기회 : ${count}`
+
     startNum();
+    
     
 }
 startNum();
