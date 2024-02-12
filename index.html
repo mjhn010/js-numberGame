@@ -10,14 +10,29 @@
   </head>
   <body>
     <div class="container">
-        <div class="game-box">
-            <h1>술자리가 즐거워지는</h1>
-            <h1>업&다운게임!</h1>
-            <span id="user-result">두근두근!</span>
-            <span id="count-text">남은찬스</span>
-            <input id="user-input" type="text">
-            <button id="start-btn" type="button">Go!</button>
-            <button id="reset-btn" type="button">reset</button>
+      <audio id="bgm"><source src="/img/brave heart-디지몬테마송.mp3"></audio>
+      <div class="game-box">
+        <div class="row-box">
+          <h1 class="title">1 ~ 10 숫자를 맞춰 <br> 진화시켜줘 !</h1>
+          <button id="bgm-btn" class="bgm-start">BGM</button>
+          <button id="bgm-stop-btn" class="bgm-stop">stop</button>
+        </div>
+            <img class="m-top-3 tocomon d-none" src="../img/tocomon.png" alt="토코몬">
+            <img class="m-top-3 agumon"  src="../img/agumon-removebg-preview.png" alt="아구몬">
+            <img class="m-top-3 greymon d-none" src="../img/Greymon.png" alt="그레이몬">
+            <div class="m-top-3 count-box">
+              <img id="count-img" class="count-img" src="../img/count.png" alt="기회">
+              <img id="count-img" class="count-img" src="../img/count.png" alt="기회">
+              <img id="count-img" class="count-img" src="../img/count.png" alt="기회">
+              <img id="count-img" class="count-img" src="../img/count.png" alt="기회">
+              <img id="count-img" class="count-img" src="../img/count.png" alt="기회">
+            </div>
+            <span class="m-top-3 text-box" id="user-result">힌트!!</span>
+            <input placeholder="1~10 숫자를 입력해주세요." class="m-top-3 input-text" id="user-input" type="text">
+            <div class="m-top-3 btn-box">
+              <button class="start-btn" id="start-btn" type="button">Go!</button>
+              <button class="reset-btn" id="reset-btn" type="button">reset</button>
+            </div>
         </div>
     </div>
   </body>
