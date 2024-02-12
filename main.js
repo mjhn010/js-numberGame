@@ -41,7 +41,7 @@ userInput.addEventListener("focus", () => {
   userInput.value = "";
 });
 function startNum() {
-  randomNum = Math.floor(Math.random() * 10 + 1);
+  randomNum = Math.floor(Math.random() * 30 + 1);
   for (let img of countImg) {
     if (life.length < 5) {
       life.push(img);
