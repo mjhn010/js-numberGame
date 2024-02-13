@@ -1,1 +1,1 @@
-https://projectjunweb.netlify.app/
+https://jun-number-game-digimon.netlify.app/
